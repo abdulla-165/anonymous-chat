@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { io } from 'socket.io-client';
 
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+const BACKEND_URL = 'https://anonymous-chat-production-51a6.up.railway.app';
 const socket = io(BACKEND_URL, { autoConnect: true });
 
 export default function App() {
