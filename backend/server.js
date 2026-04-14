@@ -18,7 +18,7 @@ const io = new Server(server, {
   cors: { origin: '*', methods: ['GET', 'POST'] }
 });
 
-app.use(cors());
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 app.get('/', (req, res) => res.send('Anonymous Chat Server is running!'));
 
